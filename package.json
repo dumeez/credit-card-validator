@@ -1,0 +1,20 @@
+{
+  "name": "credit-card-validator",
+  "version": "1.0.0",
+  "description": "Check the validity and return the credit card's type (Visa, MasterCard, Maestro...)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Credit",
+    "Card",
+    "Number",
+    "Validator",
+    "Visa",
+    "MasterCard",
+    "Maestro"
+  ],
+  "author": "Yestudent",
+  "license": "ISC"
+}
