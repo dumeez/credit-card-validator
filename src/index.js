@@ -230,23 +230,22 @@ function getCardType(number) {
  * The function to call to validate a card number
  */
 
-function validateCard(number, callback) {
+function validateCard(number) {
   initVerification();
-  var length_valid, luhn_valid;
+  var lengthValid, luhnValid;
   cardType = getCardType(number, options);
-  luhn_valid = false;
-  length_valid = false;
+  luhnValid = false;
+  lengthValid = false;
   if (cardType != null) {
-    luhn_valid = isValidLuhn(number);
-    length_valid = isValidLength(number, cardType);
+    luhnValid = isValidLuhn(number);
+    lengthValid = isValidLength(number, cardType);
   }
-  let result = {
+  return {
     cardType: cardType,
-    valid: luhn_valid && length_valid,
-    luhn_valid: luhn_valid,
-    length_valid: length_valid
+    valid: luhnValid && lengthValid,
+    luhnValid: luhnValid,
+    lengthValid: lengthValid
   };
-  callback(result);
 };
 
 /**

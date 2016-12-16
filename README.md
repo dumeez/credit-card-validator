@@ -26,12 +26,11 @@ Here an example :
 ```sh
     $("input").keyup(function() {
         var cardValue = $(this).val();
-        validateCard(cardValue, function(result) {
-        $('.log').html('Card type: ' + (result.cardType == null ? 'carte inconnue' : result.cardType.name)
+        var result = validateCard(cardValue);
+        $('.log').html('Card type: ' + (result.cardType == null ? '-' : result.cardType.name)
             + '<br>Valid: ' + result.valid
-            + '<br>Length valid: ' + result.length_valid
-            + '<br>Luhn valid: ' + result.luhn_valid);
-        });
+            + '<br>Length valid: ' + result.lengthValid
+            + '<br>Luhn valid: ' + result.luhnValid);
     });
 ```
 
