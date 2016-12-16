@@ -4,6 +4,7 @@
   "description": "Check the validity and return the credit card's type (Visa, MasterCard, Maestro...)",
   "main": "src/index.js",
   "scripts": {
+    "postinstall": "browserify src/index.js > src/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
     "Maestro"
   ],
   "author": "Yestudent",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.1"
+  }
 }

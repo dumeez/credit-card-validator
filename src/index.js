@@ -283,7 +283,7 @@ function isValidLuhn(number) {
 };
 
 
-export {
+module.exports {
     validateCard,
     getCardType,
     isValidLuhn,
