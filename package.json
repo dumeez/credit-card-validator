@@ -4,7 +4,6 @@
   "description": "Check the validity and return the credit card's type (Visa, MasterCard, Maestro...)",
   "main": "src/index.js",
   "scripts": {
-    // "postinstall": "mkdir dist && cd ./dist && touch index.js && browserify src/index.js > dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
