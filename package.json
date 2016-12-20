@@ -22,7 +22,7 @@
   ],
   "author": "Yestudent",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "browserify": "^13.1.1",
     "uglify-js": "^2.7.5"
   }
