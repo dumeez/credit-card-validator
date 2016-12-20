@@ -283,9 +283,9 @@ function isValidLuhn(number) {
 };
 
 
-module.exports {
-    validateCard,
-    getCardType,
-    isValidLuhn,
-    isValidLength
-}
+module.exports = {
+    validateCard: validateCard,
+    getCardType: getCardType,
+    isValidLuhn: isValidLuhn,
+    isValidLength: isValidLength
+};

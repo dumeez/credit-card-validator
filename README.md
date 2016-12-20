@@ -16,7 +16,7 @@ You can use this package if you want to check the validity of a credit card numb
 
 ### Use
 
-To check if a card number is valid, you have to call validateCard function.
+To check if a card number is valid, you have to call validateCard function from creditCardValidator module.
 You can call this function every time the user enter a letter in an input.
 Here an example :
 ```sh
@@ -26,7 +26,7 @@ Here an example :
 ```sh
     $("input").keyup(function() {
         var cardValue = $(this).val();
-        var result = validateCard(cardValue);
+        var result = creditCardValidator.validateCard(cardValue);
         $('.log').html('Card type: ' + (result.cardType == null ? '-' : result.cardType.name)
             + '<br>Valid: ' + result.valid
             + '<br>Length valid: ' + result.lengthValid
