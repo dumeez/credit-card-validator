@@ -50,7 +50,7 @@ const cardTypes = [
     valid_length: [16]
   }, {
     name: 'maestro',
-    range: '50, 56-69',
+    range: '50, 56-69, 0604',
     valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
   }, {
     name: 'uatp',
