@@ -4,7 +4,8 @@
   "description": "Check the validity and return the credit card's type (Visa, MasterCard, Maestro...)",
   "main": "src/index.js",
   "scripts": {
-    "postinstall": "mkdir ./dist && browserify src/index.js --standalone credit-card-validator -o dist/credit-card-validator.js && ./node_modules/uglify-js/bin/uglifyjs dist/credit-card-validator.js -o dist/credit-card-validator.min.js",
+    "build::browser": "./build_dist.sh",
+    "clean": "rm -r dist/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
