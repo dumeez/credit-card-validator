@@ -4,7 +4,7 @@
   "description": "Check the validity and return the credit card's type (Visa, MasterCard, Maestro...)",
   "main": "src/index.js",
   "scripts": {
-    "postinstall": "./post_install.sh",
+    "build::browser": "./build_dist.sh",
     "clean": "rm -r dist/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
